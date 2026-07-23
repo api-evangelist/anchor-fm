@@ -1,7 +1,25 @@
 aid: anchor-fm
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/anchor-fm.png
 name: Anchor FM
-description: 'Anchor FM is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Anchor FM was a podcast creation, hosting, distribution, and monetization
+  platform founded in 2015 that let anyone record, edit, publish, and monetize a podcast
+  for free from a phone or browser. Spotify acquired Anchor in 2019 and folded the
+  product into Spotify for Podcasters, later rebranded Spotify for Creators; the
+  anchor.fm domain now redirects to creators.spotify.com. Anchor never published a
+  public developer API or developer portal, so this API Evangelist profile carries
+  company identity and domain-security posture only. Originally surfaced as a portfolio
+  company of Accel (consumer sector).'
 url: https://raw.githubusercontent.com/api-evangelist/anchor-fm/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +27,20 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: spotify
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
 - Consumer
+- Podcasting
+- Podcast Hosting
+- Audio
+- Media
+- Creator Tools
+- Monetization
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/anchor-fm-domain-security.yml
 - type: Website
   url: http://www.anchor.fm
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
